@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery Mobile: Theme Download</title>
+		<link rel="stylesheet" href="themes/best_theam.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0-rc.1/jquery.mobile.structure-1.4.0-rc.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.0-rc.1/jquery.mobile-1.4.0-rc.1.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" data-theme="a">
+			<div data-role="header" >
+          
+				<h1>Daawat</h1>
+             <a data-role="button" data-icon="search" class="ui-btn-right">Search</a>     
+			</div>
+	<div data-role="content" data-theme="a">	
+		<a href="#" data-role="button" data-icon="home">Home</a>
+        <a href="#about" data-role="button" data-icon="star" data-transition="flip">About Us</a>
+        <a href="#menu" data-role="button" data-icon="grid">Menu</a>
+        <a href="gallery.html" data-role="button" data-icon="star" data-transition="pop">Gallery</a>
+        <a href="#contact" data-role="button" data-rel="dialog"  data-icon="info">Contact Us</a>		
+	</div><!-- /content -->
+
+	<div data-role="footer">
+    <div class="ui-grid-b">
+    <div class="ui-block-a|b|c">
+		<a href="#" data-role="button" data-icon="plus">Add  On Facebook</a>
+        <a href="#" data-role="button" data-icon="plusr">Add On Twitter</a>
+        <a href="#" data-role="button" data-icon="plus">Add  On Google+</a>
+        </div>
+        </div>
+	</div><!-- /footer -->
+</div><!-- /page -->
+<div data-role="page" id="contact" class="my-dialog"  data-overlay-theme="a">
+<div data-role="header">
+<h1>Contact Us</h1>
+</div>
+<div data-role="content" data-theme="a" >
+<form method="post" action="#">
+<label for="fname" class="ui-hidden-accessible">Name</label>
+<input type="text" name="name" id="name" placeholder="Name">
+<label for="email" class="ui-hidden-accessible">Email</label>
+<input type="text" name="email" id="email" placeholder="Email">
+<label for="msg" class="ui-hidden-accessible">Message</label>
+<textarea name="msg" id="msg" placeholder="Message"></textarea>
+<input type="submit" data-inline="true" value="Submit">
+</form>
+</div>
+<div data-role="footer">
+</div>
+</div>
+
+<!-- Start of second page -->
+
+	<div data-role="page" id="menu" data-theme="a">
+			<div data-role="header" >
+          <a href="index.html" data-role="button" data-icon="back">Back</a>
+				<h1>Daawat</h1>
+             <a data-role="button" data-icon="search">Search</a>     
+			</div>
+	<!-- /content --><div data-role="content" data-theme="a">
+<div data-role="collapsible-set" data-theme="a">
+<div data-role="collapsible" >
+ <h2>Chinese</h2>
+<ul data-role="listview" data-filter="true">
+<li><a href="#" style="background-color:#ED1C24;"  >
+<img src="themes/images/images.jpg">
+<h2>Noodles</h2>
+<p>Price:70 Rs.</p>
+<a href="#page" data-transition="slide" data-position-to="window" data-icon="gear" data-rel="popup">
+Order Now</a></a></li>
+<li><a href="#page" style="background-color:#ED1C24;"  >
+<img src="themes/images/images (1).jpg">
+<h2>Chilly Paneer</h2>
+<p>Price:90 Rs.</p>
+<a href="#page" data-rel="popup" data-transition="slide" data-position-to="window" data-icon="gear">Order Now
+</a></li>
+</li>
+
+</ul>
+</div>
+<div data-role="collapsible">
+<h2>Italian</h2>
+<ul data-role="listview" >
+<li>White Passta</li>
+<li>White Passta</li><li>White Passta</li>
+<li>White Passta</li>
+</ul>
+</div>
+<div data-role="collapsible">
+<h2>Ice-Creams</h2>
+<ul data-role="listview" >
+<li>White Passta</li>
+<li>White Passta</li><li>White Passta</li>
+<li>White Passta</li>
+</ul>
+</div><div data-role="collapsible">
+<h2>South Indian</h2>
+<ul data-role="listview" >
+<li>White Passta</li>
+<li>White Passta</li><li>White Passta</li>
+<li>White Passta</li>
+</ul>
+</div>
+</div>
+</div>
+	<div data-role="footer">
+    fgfg
+	</div>
+    
+    <div data-role="popup" id="page"  class="ui-content" style="max-width:340px; padding-bottom:2em;">
+    <h3>ORDER</h3>
+    <p>For giving order please click on Order Button.</p>
+    <a href="#" data-role="button" data-rel="back"  data-icon="check" data-inline="true" data-mini="true">Buy: 70 Rs</a>
+    <a href="#" data-role="button" data-rel="back" data-inline="true" data-mini="true">Cancel</a>
+</div>!-- /footer -->
+</div>
+
+<div data-role="page" data-theme="a" id="about">
+<div data-role="header" >
+<a href="index.html" data-role="button" data-icon="back">Back</a>
+<h2>Dawaat</h2>
+<a href="index.html" data-role="button" data-icon="search">Search</a>
+</div>
+<div data-role="content" data-theme="a">
+<img src="themes/images/images (3).jpg" width="440">
+<p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<div data-role="footer">
+  <div class="ui-grid-b">
+    <div class="ui-block-a|b|c">
+		<a href="#" data-role="button" data-icon="plus">Add  On Facebook</a>
+        <a href="#" data-role="button" data-icon="plusr">Add On Twitter</a>
+        <a href="#" data-role="button" data-icon="plus">Add  On Google+</a>
+        </div>
+        </div>
+        
+</div>
+</div>
+</div>
+
+	</body>
+</html>
